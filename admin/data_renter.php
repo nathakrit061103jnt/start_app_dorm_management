@@ -29,6 +29,7 @@ if (isset($_SESSION["aid"])) {
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="page-top">
@@ -60,7 +61,7 @@ if (isset($_SESSION["aid"])) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">ผู้เช่าห้องพัก</h6>
+                            <h6 class="m-0 font-weight-bold txt-color">ผู้เช่าห้องพัก</h6>
                         </div>
                         <div class="card-body">
                             <!-- <a href="add_room.php" type="button" class="btn btn-primary mb-3">เพิ่มห้องพัก</a> -->

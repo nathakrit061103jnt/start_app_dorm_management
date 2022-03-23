@@ -35,6 +35,7 @@ if (isset($_SESSION["aid"])) {
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -69,7 +70,7 @@ if (isset($_SESSION["aid"])) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">บิลค่าเช่าประจำเดือน
+                            <h6 class="m-0 font-weight-bold txt-color">บิลค่าเช่าประจำเดือน
                                 <?php
 $date = date_create($month);
         echo date_format($date, "M-Y");?></h6>
@@ -98,47 +99,47 @@ $date = date_create($month);
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputEmail4">มิเตอร์น้ำล่าสุด </label>
-                                        <h6 class="text-primary ml-3"><?=$data["meters_wnew"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["meters_wnew"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputPassword4">มิเตอร์ไฟล่าสุด</label>
-                                        <h6 class="text-primary ml-3"><?=$data["meters_lnew"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["meters_lnew"]?></h6>
 
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">ค่าน้ำต่อหน่วย</label>
-                                        <h6 class="text-primary ml-3"><?=$row["l_c_w"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$row["l_c_w"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">ค่าไฟต่อหน่วย</label>
-                                        <h6 class="text-primary ml-3"><?=$row["l_c_e"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$row["l_c_e"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">จำนวนน้ำที่ใช้</label>
-                                        <h6 class="text-primary ml-3"><?=$data["water_unit"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["water_unit"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">จำนวนไฟที่ใช้</label>
-                                        <h6 class="text-primary ml-3"><?=$data["light_unit"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["light_unit"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">รวมค่าน้ำ</label>
-                                        <h6 class="text-primary ml-3"><?=$data["total_wprice"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["total_wprice"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">รวมค่าไฟ</label>
-                                        <h6 class="text-primary ml-3"><?=$data["total_lprice"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["total_lprice"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">ค่าเช่า</label>
-                                        <h6 class="text-primary ml-3"><?=$row["l_rent"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$row["l_rent"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">ค่าเช่าห้องพักรวมสุทธิ</label>
-                                        <h6 class="text-primary ml-3"><?=$data["net_total"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["net_total"]?></h6>
                                     </div>
                                 </div>
-                                <a href="./data_bil.php" class="btn btn-info">กลับ</a>
+                                <a href="./data_bil.php" class="btn  button-color">กลับ</a>
                             </form>
                             <?php
 }

@@ -33,6 +33,7 @@ if (isset($_SESSION["username"])) {
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="page-top">
@@ -67,7 +68,7 @@ if (isset($_SESSION["username"])) {
                         <div class="card-header py-3">
                             <div class="row">
                                 <div class="col-md">
-                                    <h6 class="m-0 font-weight-bold text-primary">เลขที่สัญญา</h6>
+                                    <h6 class="m-0 font-weight-bold txt-color">เลขที่สัญญา</h6>
                                 </div>
                                 <div class="col-8">
                                     <form method="get"
@@ -79,7 +80,7 @@ if (isset($_SESSION["username"])) {
                                                     aria-describedby="helpId" placeholder="" value="<?=$month?>">
                                             </div>
                                             <div class="input-group-append">
-                                                <button class="btn btn-primary" type="submit">
+                                                <button class="btn button-color" type="submit">
                                                     <i class="fas fa-search fa-sm"></i>
                                                 </button>
                                             </div>
@@ -130,7 +131,7 @@ $check_bil = check_bil($conn, $data["leases_id"], $month);
         $check_payment = check_payment($conn, $data["leases_id"], $month);
         if ($check_bil == 0) {?>
                                                 <a href="./insert_bil.php?monthS=<?=$month?>&room_id=<?=$data["room_id"]?>&rid=<?=$data["rid"]?>&leases_id=<?=$data["leases_id"]?>"
-                                                    class="btn btn-sm btn-primary">ออกบิล
+                                                    class="btn btn-sm button-color">ออกบิล
                                                 </a>
 
                                                 <?php
@@ -175,7 +176,7 @@ if ($check_payment == 0) {
 } elseif ($check_payment == 1) {
                 ?>
                                                     <a href="./edit_status_bil.php?invoice_id=<?=$get_invoice_id?>&monthS=<?=$month?>&room_id=<?=$data["room_id"]?>&rid=<?=$data["rid"]?>&leases_id=<?=$data["leases_id"]?>"
-                                                        class="btn btn-primary"><i class="fas fa-adjust"></i></i>
+                                                        class="btn button-color"><i class="fas fa-adjust"></i></i>
                                                     </a>
 
                                                     <?php
@@ -239,7 +240,7 @@ include_once "./footer.php";
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn button-color" href="login.html">Logout</a>
                 </div>
             </div>
         </div>

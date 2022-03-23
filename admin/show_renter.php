@@ -32,6 +32,7 @@ if (isset($_SESSION["aid"])) {
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -66,7 +67,7 @@ if (isset($_SESSION["aid"])) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">ฟอร์มข้อมูลผู้เข้าพัก</h6>
+                            <h6 class="m-0 font-weight-bold txt-color">ฟอร์มข้อมูลผู้เข้าพัก</h6>
                         </div>
                         <div class="card-body">
                             <?php
@@ -85,32 +86,32 @@ include "./configs/connectDB.php";
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">ชื่อ-นามสกุล</label>
-                                        <h6 class="text-primary ml-3"><?=$data["r_name"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["r_name"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">เลขที่บัตรประชาชน</label>
-                                        <h6 class="text-primary ml-3"><?=$data["r_idcard"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["r_idcard"]?></h6>
 
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">เบอร์โทรศัพท์</label>
-                                        <h6 class="text-primary ml-3"><?=$data["r_tel"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["r_tel"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">อีเมล</label>
-                                        <h6 class="text-primary ml-3"><?=$data["r_email"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["r_email"]?></h6>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputAddress">ที่อยู่</label>
-                                        <h6 class="text-primary ml-3"><?=$data["r_add"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["r_add"]?></h6>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">ชื่อผู้ใช้</label>
-                                        <h6 class="text-primary ml-3"><?=$data["username"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data["username"]?></h6>
                                     </div>
 
                                 </div>
-                                <a href="./data_renter.php" class="btn btn-info">กลับ</a>
+                                <a href="./data_renter.php" class="btn button-color">กลับ</a>
                             </form>
                             <?php
 }
@@ -157,7 +158,7 @@ include_once "./footer.php";
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn button-color" href="login.html">Logout</a>
                 </div>
             </div>
         </div>

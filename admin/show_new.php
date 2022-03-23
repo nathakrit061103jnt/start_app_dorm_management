@@ -29,6 +29,7 @@ if (isset($_SESSION["aid"])) {
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -65,7 +66,7 @@ include_once "./navbar.php";
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">ข้อมูลข่าว</h6>
+                            <h6 class="m-0 font-weight-bold txt-color">ข้อมูลข่าว</h6>
                         </div>
                         <div class="card-body">
                             <?php
@@ -80,7 +81,7 @@ include_once "./configs/connectDB.php";
                                     <div class="form-group col-md-12">
                                         <label for="inputEmail4">วันที่เเจ้งข่าว </label>
                                         <br>
-                                        <span class="ml-3 text-primary">
+                                        <span class="ml-3 txt-color">
                                             <?php
 $date = date_create($data["news_date"]);
 $y = date_format($date, "Y");
@@ -93,17 +94,17 @@ echo date_format($date, "d-m") . "-$y";
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">หัวข้อข่าว</label>
                                         <br>
-                                        <span class="ml-3 text-primary"><?=$data["news_title"]?></span>
+                                        <span class="ml-3 txt-color"><?=$data["news_title"]?></span>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputAddress">รายละเอียด</label>
                                         <br>
-                                        <span class="ml-3 text-primary"><?=$data["description"]?></span>
+                                        <span class="ml-3 txt-color"><?=$data["description"]?></span>
 
                                     </div>
                                 </div>
                                 <a href="./data_new.php" type="submit" name="InsertNewSubmit"
-                                    class="btn btn-info mt-3">กลับ</a>
+                                    class="btn button-color mt-3">กลับ</a>
                             </form>
                             <?php
 }

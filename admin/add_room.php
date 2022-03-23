@@ -26,7 +26,7 @@ if (isset($_SESSION["aid"])) {
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body id="page-top">
@@ -60,7 +60,7 @@ if (isset($_SESSION["aid"])) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">ฟอร์มเพิ่มห้องพัก</h6>
+                            <h6 class="m-0 font-weight-bold txt-color">ฟอร์มเพิ่มห้องพัก</h6>
                         </div>
                         <div class="card-body">
                             <form action="" method="post">
@@ -100,7 +100,7 @@ include_once "./configs/connectDB.php";
                                         </div>
                                     </div>
 
-                                    <button type="submit" name="InsertRoomSubmit" class="btn btn-primary">บันทึก
+                                    <button type="submit" name="InsertRoomSubmit" class="btn button-color">บันทึก
                                     </button>
                             </form>
                         </div>

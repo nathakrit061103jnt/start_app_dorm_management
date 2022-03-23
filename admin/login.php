@@ -27,9 +27,23 @@ unset($_SESSION["a_tel"]);
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <style>
+        .bg-p{
+            background-color: coral;
+        }
+        .button-color{
+            background-color: coral;
+             border: coral;
+             color:white;
+        }
+        .txt-color{
+            color:coral;
+        }
+    </style>
+
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-p">
 
     <div class="container">
 
@@ -44,13 +58,13 @@ unset($_SESSION["a_tel"]);
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block  ">
 
-                                <img src="./img/signup-1.png" class="img-fluid" alt="" srcset="">
+                                <img src="./img/two-factor-authentication-pana.svg" class="img-fluid" alt="" srcset="">
 
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 mt-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">เข้าสู่ระบบ ผู้ดูเเลหอพัก</h1>
+                                        <h1 class="h4  mb-4 txt-color">เข้าสู่ระบบ ผู้ดูเเลหอพัก</h1>
                                     </div>
                                     <form class="user" action="" method="post">
                                         <div class="form-group">
@@ -71,10 +85,10 @@ unset($_SESSION["a_tel"]);
                                             </div>
                                         </div> -->
                                         <button type="submit" name="loginSubmit"
-                                            class="btn btn-primary btn-user btn-block">
+                                            class="btn button-color text-white btn-user btn-block">
                                             เข้าสู่ระบบ
                                         </button>
-                                        <hr>
+                                        <!-- <hr> -->
                                         <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
                                         </a> -->
@@ -82,7 +96,7 @@ unset($_SESSION["a_tel"]);
                                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                         </a> -->
                                     </form>
-                                    <hr>
+                                    <!-- <hr> -->
                                     <!-- <div class="text-center">
                                         <a class="small" href="forgot-password.html">ลืมรหัสผ่าน?</a>
                                     </div>

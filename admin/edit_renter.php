@@ -32,6 +32,7 @@ if (isset($_SESSION["aid"])) {
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -66,7 +67,7 @@ if (isset($_SESSION["aid"])) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">ฟอร์มเเก้ไขข้อมูลผู้เข้าพัก</h6>
+                            <h6 class="m-0 font-weight-bold txt-color">ฟอร์มเเก้ไขข้อมูลผู้เข้าพัก</h6>
                         </div>
                         <div class="card-body">
                             <?php
@@ -115,7 +116,7 @@ include "./configs/connectDB.php";
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputAddress">รหัสผ่าน</label><br>
-                                        <a class="btn btn-sm btn-primary ml-3"
+                                        <a class="btn btn-sm button-color ml-3"
                                             href="editPasswordUser.php?room_id=<?=$room_id?>&rid=<?=$rid?>&leases_id=<?=$leases_id?>">เปลี่ยนรหัสผ่าน</a>
                                     </div>
                                 </div>
@@ -194,7 +195,7 @@ include_once "./configs/connectDB.php";
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn button-color" href="login.html">Logout</a>
                 </div>
             </div>
         </div>

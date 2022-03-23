@@ -28,6 +28,7 @@ if (isset($_SESSION["aid"])) {
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -62,7 +63,7 @@ if (isset($_SESSION["aid"])) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">ข้อมูลห้องพัก</h6>
+                            <h6 class="m-0 font-weight-bold txt-color">ข้อมูลห้องพัก</h6>
                         </div>
                         <div class="card-body">
                             <?php
@@ -77,25 +78,25 @@ include_once "./configs/connectDB.php";
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputAddress">หมายเลขห้อง</label>
-                                        <h6 class="text-primary ml-3"><?=$data_r["room_id"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data_r["room_id"]?></h6>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputAddress">มิเตอร์น้ำตั้งต้น</label>
-                                        <h6 class="text-primary ml-3"><?=$data_r["meters_water"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data_r["meters_water"]?></h6>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputAddress">มิเตอร์ไฟตั้งต้น</label>
-                                        <h6 class="text-primary ml-3"><?=$data_r["meters_light"]?></h6>
+                                        <h6 class="txt-color ml-3"><?=$data_r["meters_light"]?></h6>
                                     </div>
                                     <div class="form-group col-md-12">
                                         <div class="form-group">
                                             <label for="inputAddress">ประเภทห้องพัก</label>
-                                            <h6 class="text-primary ml-3"><?=$data_r["room_tname"]?></h6>
+                                            <h6 class="txt-color ml-3"><?=$data_r["room_tname"]?></h6>
 
                                         </div>
                                     </div>
 
-                                    <a href="./data_room.php" class="btn btn-info ">กลับ
+                                    <a href="./data_room.php" class="btn button-color ">กลับ
                                     </a>
                             </form>
                             <?php

@@ -7,6 +7,7 @@ if (isset($_SESSION["username"])) {
 
 <head>
 
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,6 +28,10 @@ if (isset($_SESSION["username"])) {
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body id="page-top">
@@ -58,10 +63,10 @@ if (isset($_SESSION["username"])) {
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">ห้องพัก</h6>
+                            <h6 class="m-0 font-weight-bold txt-color">ห้องพัก</h6>
                         </div>
                         <div class="card-body">
-                            <a href="add_room.php" type="button" class="btn btn-primary mb-3">เพิ่มห้องพัก</a>
+                            <a href="add_room.php" type="button" class="btn button-color mb-3">เพิ่มห้องพัก</a>
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
@@ -97,9 +102,11 @@ if ($data["room_status"] == 0) {
             echo "<span class='text-danger'>ไม่ว่าง</span>";
         }
         ?></td>
+
+ 
                                             <td class=" ">
                                                 <a href="insert_less.php?room_id=<?=$data["room_id"]?>&room_tprice=<?=$data["room_tprice"]?>&price_water=<?=$data["price_water"]?>&price_light=<?=$data["price_light"]?>"
-                                                    type="button" class="btn btn-primary btn-sm">เพิ่มสัญญา
+                                                    type="button" class="btn button-color btn-sm">เพิ่มสัญญา
                                                 </a>
                                             </td>
                                             <td class="py-0 align-middle">
