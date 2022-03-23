@@ -1,0 +1,19 @@
+{
+  "status": 200,
+  "message": "เข้าสู่ระบบสำเร็จ",
+  "error": false,
+  "rid": "6",
+  "r_name": "a",
+  "r_tel": "032356",
+  "r_idcard": "14525",
+  "r_add": "a",
+  "r_email": "a@gmail.com",
+  "username": "a",
+  "leases_id": "3",
+  "room_id": "2",
+  "leases_date": "2021-03-11",
+  "expires_date": "2021-06-24",
+  "l_c_e": "5",
+  "l_c_w": "21",
+  "l_rent": "3000"
+}
