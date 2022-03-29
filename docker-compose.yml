@@ -4,7 +4,7 @@ services:
     build: .
     ports:
       # - "8001:80"
-      - "8088:80"
+      - "80:80"
     volumes:
       - ./www:/var/www/html/
     # links:
@@ -34,7 +34,7 @@ services:
     container_name: phpmyadmin_con
     restart: always
     ports:
-      - "8080:80"
+      - "8888:80"
     networks:
       - lamp_network
     environment:
