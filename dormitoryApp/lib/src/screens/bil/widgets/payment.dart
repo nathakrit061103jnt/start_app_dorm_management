@@ -57,31 +57,31 @@ class _PaymentState extends State<Payment> {
       "image": base64Image
     };
 
-    // print(_payload);
+    print(_payload);
+    //
+    // final response = await http.post(
+    //   Uri.parse(API.PAYMENT_API),
+    //   headers: <String, String>{
+    //     'Content-Type': 'application/json; charset=UTF-8',
+    //   },
+    //   body: convert.json.encode(_payload),
+    // );
 
-    final response = await http.post(
-      Uri.parse(API.PAYMENT_API),
-      headers: <String, String>{
-        'Content-Type': 'application/json; charset=UTF-8',
-      },
-      body: convert.json.encode(_payload),
-    );
-
-    if (response.statusCode == 200) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => BilScreen(),
-        ),
-      );
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('ไม่สามารถชำระค่าเช่าได้'),
-        ),
-      );
-      throw Exception('Failed to update renter.');
-    }
+    // if (response.statusCode == 200) {
+    //   Navigator.push(
+    //     context,
+    //     MaterialPageRoute(
+    //       builder: (context) => BilScreen(),
+    //     ),
+    //   );
+    // } else {
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //     const SnackBar(
+    //       content: Text('ไม่สามารถชำระค่าเช่าได้'),
+    //     ),
+    //   );
+    //   throw Exception('Failed to update renter.');
+    // }
   }
 
   @override
