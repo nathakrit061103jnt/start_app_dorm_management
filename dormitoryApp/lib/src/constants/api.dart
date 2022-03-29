@@ -1,7 +1,7 @@
 class API {
   // static const BASE_URL = 'http://ec2-18-216-97-132.us-east-2.compute.amazonaws.com/';
   static const BASE_URL = 'http://192.168.1.9';
-  static const PROJECT_NAME = '/start_app_dorm_management';
+  static const PROJECT_NAME = '/start_app_dorm_management/www';
   // static const PROJECT_NAME = '/';
   static const IMAGES_URL_PAYMENT = '$BASE_URL/$PROJECT_NAME/admin/img/payment';
   static const UPDATE_RENTER =
